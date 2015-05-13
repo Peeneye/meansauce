@@ -1,0 +1,36 @@
+<html ng-app="demo">
+    <head>
+        {% for sheet in css %}
+        <link rel="stylesheet" href="<%= sheet %>">
+        {% endfor %}
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12" style="background:blue">
+                    <h1>Why Hello</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-2 col-lg-1">
+                    <div class="col-xs-4 col-md-12">One</div>
+                    <div class="col-xs-4 col-md-12">One</div>
+                    <div class="col-xs-4 col-md-12">One</div>
+                    <div class="col-xs-4 col-md-12">One</div>
+                    <div class="col-xs-4 col-md-12">One</div>
+                    <div class="col-xs-4 col-md-12">One</div>
+                    <div class="col-xs-4 col-md-12">One</div>
+                    <div class="col-xs-4 col-md-12">One</div>
+                    <div class="col-xs-4 col-md-12">One</div>
+                </div>
+            </div>
+        </div>
+        
+        {% for script in js %}
+        <script src="<%= script %>"></script>
+        {% endfor %}
+        <script>
+            angular.module('demo', []);
+        </script>
+    </body>
+</html>
