@@ -1,0 +1,27 @@
+{
+  "name": "meansauce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "grunt-cli": "^0.1.13",
+    "express": "^4.12.3",
+    "swig": "^1.4.2",
+    "mongoose": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Peeneye/meansauce.git"
+  },
+  "author": "Jared Spencer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peeneye/meansauce/issues"
+  },
+  "homepage": "https://github.com/Peeneye/meansauce"
+}
